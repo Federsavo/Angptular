@@ -20,15 +20,10 @@
   </style>
 </head>
 <body>
-<img src="https://m.media-amazon.com/images/I/5106Ex9rJrL.jpg" alt="Immagine di una papera" onclick="playDuckSound()">
+<img src="https://m.media-amazon.com/images/I/5106Ex9rJrL.jpg" alt="Immagine di una papera" (click)="playDuckSound()">
 
-<audio id="duckSound" src="C:\Users\user\Desktop\progetticorsoprogrammazione\Angptular\public\duck.mp3"></audio>
+<audio id="duckSound" src="duck.mp3"></audio>
 
-<script>
-  function playDuckSound() {
-    const duckSound = document.getElementById('duckSound');
-    duckSound.play();
-  }
-</script>
+
 </body>
 </html>

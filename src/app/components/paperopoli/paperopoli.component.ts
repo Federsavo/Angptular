@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-paperopoli',
@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './paperopoli.component.css'
 })
 export class PaperopoliComponent {
-
+  playDuckSound(): void {
+    const duckSound: HTMLAudioElement = document.getElementById('duckSound') as HTMLAudioElement;
+    if (duckSound) {
+      duckSound.play();
+    }
+  }
 }
