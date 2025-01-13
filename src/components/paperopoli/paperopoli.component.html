@@ -1,1 +1,34 @@
-<p>paperopoli works!</p>
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Immagine con Suono di Papera</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    img {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<img src="https://m.media-amazon.com/images/I/5106Ex9rJrL.jpg" alt="Immagine di una papera" onclick="playDuckSound()">
+
+<audio id="duckSound" src="C:\Users\user\Desktop\progetti corso programmazione\Angptular\duck.mp3"></audio>
+
+<script>
+  function playDuckSound() {
+    const duckSound = document.getElementById('duckSound');
+    duckSound.play();
+  }
+</script>
+</body>
+</html>
