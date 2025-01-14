@@ -1,0 +1,17 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+img {
+  animation: rotate 2s infinite linear; /* L'immagine ruota continuamente */
+}
+
+/* Opzionale: Rotazione al passaggio del mouse */
+img:hover {
+  animation: rotate 2s infinite linear;
+}
